@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form id="form" novalidate>
+      <label for="email">
+        <span>Email*</span>
+        <span class="errors"></span>
+        <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,}$" name="email" id="email" required>  
+      </label>
+     
+      <label for="country">
+        <span>Country*</span>
+        <span class="errors"></span>
+        <input type="text" pattern="[a-zA-Z]*" name="country" id="country" minlength="3" required>
+      </label>
+
+      <label for="postal-code">
+        <span>Postal Code</span>
+        <span class="errors"></span>
+        <input type="text" pattern="[a-zA-Z]+[0-9]+[a-zA-Z]+[0-9]+[a-zA-Z]+[0-9]" name="postal-code" id="postal-code">
+      </label>
+      
+      <label for="password">
+        <span>Password*</span>
+        <span class="errors"></span>
+        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" id="password" autocomplete="off" required>
+      </label>
+      
+      <label for="password-confirm">
+        <span>Password Confirmation*</span>
+        <span class="errors"></span>
+        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password-confirm" id="password-confirm" autocomplete="off" required>
+      </label>
+      
+      <div>- Password must contain 8+ characters, 1+ number, and 1+ lowercase and upper case letters.</div>
+      <div>- * are mandatory fields.</div>
+      <button>Submit</button>
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>

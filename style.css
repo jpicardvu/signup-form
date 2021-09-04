@@ -1,0 +1,52 @@
+html {
+  background-color: aliceblue;
+  color: navy;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+form {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -25%);
+  border: 0.01rem solid navy;
+  padding: 0.25rem 0.25rem;
+}
+
+input {
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  width: 100%;
+  border: 0.0625rem solid navy;
+  font-family: inherit;
+  outline-color: navy;
+}
+
+.highlight:invalid {
+  border-color: red;
+  background-color: #FDD;
+}
+
+
+div {
+  font-size: 0.75rem;
+}
+
+button {
+  width: 100%;
+}
+
+.errors {
+  color: red;
+  font-size: 0.85rem;
+}
